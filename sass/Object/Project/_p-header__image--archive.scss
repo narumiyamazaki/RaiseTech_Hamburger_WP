@@ -1,0 +1,51 @@
+.p-header__image--archive {
+    position: relative;
+    img {
+    width: 100%;
+    height: 27rem;
+    background-color: rgba(0, 0,0, .8);
+    object-position: 0 50%;
+    object-fit: cover;
+    @include media(pc) {
+        width: 100%;
+        height: auto;
+        transform: scale(1.005,1);
+    }
+        }
+    //スマホ時のpタグへのネスト
+        & .p-header__title--archive{
+            //menu部分
+            width: 100%;
+            position: absolute;
+            color: #fff;
+            font-family: "Roboto";
+            font-size: 3.5rem;
+            font-weight: bold;
+            /*Menuより下が画像の半分なので、フォント分だけ上に文字を上げている*/
+            top: calc(50% - 3.5rem);
+            margin: 0;
+            padding-left: 3.5rem;
+            line-height: normal;
+            //tb時のpタグへのネスト
+            @include media(tb) {
+                //Menu部分
+                font-size: 6rem;
+                /*Menuの文字半分で上下が分かれているため、フォントの半分だけ上に文字を上げている*/
+                top: calc(50% - 3rem);
+                margin: 0;
+                padding-left: 8rem;
+                }
+            //pc時のpタグへのネスト
+            @include media(pc) {
+                //ダミーサイト文字部分
+                position: absolute;
+                color: #fff;
+                font-size: 3rem;
+                font-weight: bold;
+                //画像のtopから半分の位置に文字を移動。半分の位置から文字が設置されるが、フォントの大きさ分だけ中央から下にずれるため、フォントの半分だけ中央から上に戻す
+                top: calc(50% - 1.5rem);
+                margin: 0;
+                padding-left: 5.5rem;
+                }
+            }
+        }

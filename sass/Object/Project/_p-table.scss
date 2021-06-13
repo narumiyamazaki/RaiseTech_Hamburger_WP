@@ -1,0 +1,10 @@
+.p-table{
+    margin:4rem 0 3rem;
+    width: 100%;
+    @include media(tb) {
+        margin: 5rem 0 5.5rem;   
+    }
+    @include media(pc) {
+        margin: 2.5rem 0;
+    }
+}

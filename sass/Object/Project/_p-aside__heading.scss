@@ -1,0 +1,38 @@
+/*mapの見出し部分*/
+.p-aside__heading {
+    color: #fff;
+    font-family: "M+ 1m bold";
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    position: absolute;
+    //tbのレスポンシブ
+    @include media(tb) {
+        margin-top: 2.8rem;
+        font-size: 3rem;
+    }
+    @include media(pc) {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    /*ドロップシャドウ部分*/
+        &::before {
+            content:"";
+            position: absolute;
+            width: 6rem;
+            height: .2rem;
+            background-color:#fff;
+            /*線の上下位置*/
+            bottom: -2rem;
+            @include media(tb) {
+            /*線の上下位置*/
+            bottom: -1rem;
+            width: 7.5rem;
+            }
+            @include media(pc) {
+            /*線の上下位置*/
+            bottom: -3rem;
+            width: 4.3rem;
+            height: .1rem;
+            }
+    }
+}

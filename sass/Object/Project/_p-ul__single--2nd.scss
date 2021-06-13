@@ -1,0 +1,14 @@
+.p-ul__single--2nd {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    @include media(tb) {
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+    }
+    @include media(pc) {
+        padding-left: .5rem;
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+}

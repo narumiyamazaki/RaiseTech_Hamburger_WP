@@ -1,0 +1,10 @@
+.p-footer__info--verticalline{
+        background-color: #fff;
+        width: .15rem;
+        margin: .5rem 1rem 0rem;
+        height: 60%;
+        @include media(pc) {
+            margin: .4rem 1rem 0rem;
+            height:70%;
+        }
+    }

@@ -1,0 +1,14 @@
+/*検索バーの虫眼鏡部分*/
+.fas{
+    position: absolute;
+    top:36%;
+    margin-left:1rem;
+    color:#808080;
+    font-size:1.5rem;
+    &::before{
+        content: "\f002";
+    }
+    @include media(pc){
+        top: 30%;
+    }
+}

@@ -1,0 +1,16 @@
+.p-article__single--bottom-img--js--iswitch{
+    width: 80%;
+    margin: 4.5rem auto 2rem;
+    display: block;
+    @include media(tb) {
+        margin-top: 8rem;
+        margin-bottom: 22rem;
+        width: 80%;
+
+    }
+    @include media(pc) {
+        width:45%;
+        margin: 2rem auto 2.5rem;
+
+    }
+}

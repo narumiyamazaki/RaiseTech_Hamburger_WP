@@ -1,0 +1,40 @@
+.p-header__image {
+    position: relative;
+    img {
+    width: 100%;
+    height: auto;
+        }
+    //スマホ時のpタグへのネスト
+        & p{
+            //ダミーサイト文字部分
+            position: absolute;
+            color: #fff;
+            font-family: "M+ 1m bold";
+            font-size: 3.5rem;
+            font-weight: bold;
+            //画像のtopから半分の位置に文字を移動。半分の位置から文字が設置されるが、フォントの大きさ分だけ中央から下にずれるため、フォントの半分だけ中央から上に戻す
+            top: calc(50% - 3.5rem);
+            margin: 0;
+            padding-left: 3rem;
+            //tb時のpタグへのネスト
+            @include media(tb) {
+                //ダミーサイト文字部分
+                top: calc(50% - 1rem);
+                margin: 0;
+                padding-left: 7rem;
+                }
+            //pc時のpタグへのネスト
+            @include media(pc) {
+                //ダミーサイト文字部分
+                position: absolute;
+                color: #fff;
+                font-family: "M+ 1m bold";
+                font-size: 2rem;
+                font-weight: bold;
+                //画像のtopから半分の位置に文字を移動。半分の位置から文字が設置されるが、フォントの大きさ分だけ中央から下にずれるため、フォントの半分だけ中央から上に戻す
+                top: calc(50% - 1rem);
+                margin: 0;
+                padding-left: 4rem;
+                }
+            }
+        }

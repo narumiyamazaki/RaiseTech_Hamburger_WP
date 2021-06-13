@@ -1,0 +1,10 @@
+/*小見出しが入りますの部分*/
+.p-heading__small {
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+    margin: 1rem 0 0;
+    font-family: "M+ 1m bold";
+    @include media(pc) {
+        font-size: 1.5rem;  
+    }
+}

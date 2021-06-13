@@ -1,0 +1,14 @@
+/*ナビメニュー部分*/
+.p-nav__container {
+    position:relative;
+    display: none;
+    @include media(pc) {
+        display: block;
+    }
+}
+
+//sp・tbはボタンクリックで表示されるようにする
+.p-nav__container-is-open {
+    position:relative;
+    display: block;
+}

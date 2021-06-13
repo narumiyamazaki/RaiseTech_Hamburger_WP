@@ -1,0 +1,25 @@
+.p-article__single--sub-img--js--iswitch {
+   flex: 1;
+   object-fit: contain;
+   align-items: flex-start;
+   height: 100%;
+   width: 100%;
+   margin-right: 1.5rem;
+   @include media(tb) {
+      width: 43%;
+      flex: 1;
+      margin-right: 2rem;
+   }
+   @include media (pc) {
+      flex: 1;
+      width: 30%;
+   }
+}
+
+.p-article__single--sub-img--js--iswitch:nth-child(2n) {
+   margin-left: 1.5rem;
+   margin-right: 0;
+   @include media(tb) {
+      margin-left: 2rem;
+   }
+}

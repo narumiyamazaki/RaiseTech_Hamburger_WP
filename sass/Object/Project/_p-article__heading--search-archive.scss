@@ -1,0 +1,14 @@
+//見出しが入りますの部分
+.p-article__heading--search-archive {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-family: "M+ 1m bold";
+    //tb時は芽出しが入ります部分を見えなくする。
+    @include media(tb) {
+        display: none;
+    }
+    @include media(pc) {
+        display: block;
+        font-size: 2rem;
+    }
+}

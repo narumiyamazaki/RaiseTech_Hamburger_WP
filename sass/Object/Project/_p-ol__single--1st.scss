@@ -1,0 +1,16 @@
+.p-ol__single--1st{
+    margin-top: 2.2rem;
+    padding-left: 1.3rem;
+    font-size: 1.6rem;
+    @include media(tb) {
+        padding-left:6rem;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+    @include media(pc) {
+        padding-left: 4rem;
+        font-size: 1rem;
+        margin-top: 4.7rem;
+        margin-bottom: 0rem;
+    }
+}

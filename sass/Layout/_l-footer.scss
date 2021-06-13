@@ -1,0 +1,17 @@
+.l-footer {
+    background-color: #9D8670;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include media(tb){
+        height: 14rem;
+    }
+    @include media(pc){
+        height: 9rem;
+    }
+}
+.l-footer-is-hidden {
+    display: none;
+}

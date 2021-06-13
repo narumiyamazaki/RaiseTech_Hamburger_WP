@@ -1,0 +1,15 @@
+.p-aside__html-tag {
+    background-color: #F5F5F5;
+    margin: 3.5rem 0;
+    padding: 4rem 4rem;
+    font-size: 1.5rem;
+    @include media(tb) {
+        margin-top: 5rem;
+        padding: 5rem;
+    }
+    @include media(pc) {
+        margin: 3rem 0 2.5rem;
+        padding: 2.5rem;
+        font-size: 1rem;
+    }
+}

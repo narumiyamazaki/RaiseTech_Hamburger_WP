@@ -1,0 +1,8 @@
+.p-aside__html-tag--head{
+    margin: 0;
+    margin-left: 3rem;
+    line-height: 2rem;
+    @include media(pc) {
+        line-height: 1rem;
+    }
+}

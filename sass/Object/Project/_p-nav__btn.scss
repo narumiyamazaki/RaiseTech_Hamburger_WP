@@ -1,0 +1,57 @@
+$btnWidth: 3rem;
+$btnHeight: .3rem;
+button:focus{
+    outline: 0;
+}
+
+.p-nav__btn {
+    border: none;
+    background-color:#F2EDE9;
+    margin: 0;
+    line-height: 80px;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    @include media(pc) {
+        left: 2.3rem;
+        //PC時メニュー名を左に持っていく
+
+    }
+    /*メニューバツ印*/
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: $btnWidth;
+        height: $btnHeight;
+        transition: transform 0.2s;
+        top: 1rem;
+        background-color: #707070;
+        //PC時はバツ印を見えなくする
+        @include media(pc) {
+            display: none;
+        }
+    }
+    &::before {
+        transform: rotate( 45deg );
+    }
+    &::after {
+        transform: rotate( -45deg );
+    }
+    a {
+        /*リンクの青線を消す*/
+        text-decoration: none;
+        }
+        /*ボタン部分　sp・tb時は☓印にして、pc時はmenu表示*/
+        > span{
+            /*メニュー表示をさせないのでfont-sizeを0にする*/
+            font-size: 0;
+            @include media(tb) {   
+                }
+            /*pc時の設定*/
+            @include media(pc) {
+                @include header--title--menu(2rem);
+            }
+        //spanタグの閉じタグ
+        }
+    } 

@@ -1,0 +1,18 @@
+.p-blockquote--single{
+    margin: 0;
+    font-family:"M+ 1m regular";
+    font-size: 1.6rem;
+    height: 53rem;
+    overflow:hidden;
+    @include media(tb) {
+        height: auto;
+        font-size: 1.4rem;
+    }
+    @include media(pc) {
+        font-size: 1rem;
+        //font-sizeを1rem以下にする
+        transform: scale(0.8);
+        transform-origin: 0 0;
+        width:125%;
+    }
+}

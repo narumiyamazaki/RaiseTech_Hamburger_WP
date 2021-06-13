@@ -1,0 +1,21 @@
+.p-article__button {
+    position: absolute;
+    border-radius: 10rem;
+    width:50%;
+    height:4rem;
+    left: calc(50% - (50% / 2));
+    border-style: none;
+    font-family: "M+ 1m bold";
+    font-weight: bold;
+    > a {
+    text-decoration: none;
+    color:#707070;
+    }
+    //textから下部分が10remの為その半分
+    margin-top: 3rem;
+    @include media(pc) {
+        font-size: 1rem;
+        width: 60%;
+        left: calc(50% - (60% / 2));
+    }
+}

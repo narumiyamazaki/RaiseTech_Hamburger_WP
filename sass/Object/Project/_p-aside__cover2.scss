@@ -1,0 +1,13 @@
+.p-aside__cover2 {
+    width: 100%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.3);
+    @include media(tb) {
+        width: 100%;
+        height: 100%;
+    }
+    @include media(pc) {
+        width: 60%;
+        height: 100%;
+    }
+}

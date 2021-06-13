@@ -1,0 +1,8 @@
+.p-article__archive--wrapper {
+    margin-bottom: 2rem;
+    width:100%;
+    @include media(tb) {
+        //spサイズは縦に並べ、tbサイズ以上から横に並べる
+        display: flex;
+    }
+}

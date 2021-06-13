@@ -1,0 +1,26 @@
+/*mapのtext部分*/
+.c-aside__text {
+    color: #fff;
+    position: absolute;
+    top: 9rem;
+    margin-right: 2rem;
+    font-family: "M+ 1m bold";
+    font-weight: bold;
+    line-height: 2.5rem;
+    font-size: 1.1rem;
+    overflow: hidden;
+    height: 70%;
+    @include media(tb) {
+        margin-top: 1rem;
+        margin-right: 3rem;
+    }
+    @include media(pc) {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        width: 47.4%;
+        height:55%;
+        margin-top: 5rem;
+        margin-right: 5rem;
+        font-weight: 600;
+    }
+}   

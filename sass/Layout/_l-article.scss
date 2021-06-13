@@ -1,0 +1,16 @@
+.l-article{
+    padding:1.5rem 1.5rem 2rem;
+    background-color: #FFFDFA;
+    width: 100%;
+    height: auto;
+    @include media(tb) {
+        display:flex;
+        justify-content: center;
+        padding:4rem;
+    }
+    @include media(pc) {
+        padding: 6rem 5rem 6rem;
+        display:flex;
+        justify-content: center;
+    }
+}

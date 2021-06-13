@@ -1,0 +1,19 @@
+.p-blockquote__source--single {
+    margin:2rem 0 0;
+    font-size:1.6rem;
+    > a{
+        font-size: 1.8rem;
+        margin-left: .5rem;
+    }
+    @include media(tb) {
+        margin: 4rem 0 0;
+    } 
+    @include media(pc) {
+        font-size:1rem;
+        margin-top: 0rem;
+    > a{
+        font-size: 1rem;
+        margin-left: .3rem;
+        }
+    }
+}

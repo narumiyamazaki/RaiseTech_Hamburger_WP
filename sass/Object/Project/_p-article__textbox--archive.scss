@@ -1,0 +1,11 @@
+.p-article__textbox--archive {
+    background-color: #3C2B1C;
+    color: #fff;
+    padding: 1rem 1.5rem 10rem 1.5rem;
+    width:50%;
+    //margin-bottom: 2rem;
+    @include media(tb) {
+        //margin:0;
+        padding-left: 4rem;
+    }
+}

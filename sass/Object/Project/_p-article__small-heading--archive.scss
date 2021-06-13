@@ -1,0 +1,11 @@
+.p-article__small-heading--archive {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: "M+ 1m bold";
+    @include media(tb) {
+        font-size: 1.5rem;
+    }
+    @include media(pc) {
+        font-size: 1.4rem;
+    }
+}

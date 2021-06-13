@@ -1,0 +1,20 @@
+/*article eatin takeout*/
+.p-heading {
+    font-size: 4rem;
+    font-weight:bold;
+    color: #EAEAEA;
+    position: absolute;
+    top: 0;
+    padding-left: 2rem;
+    margin-top: .9rem;
+        &::before {
+            content:"";
+            position: absolute;
+            left: 2.5rem;
+            /*線の上下位置*/
+            bottom: -2rem;
+            width: 3.5rem;
+            height: .3rem;
+            background-color:#fff;
+        }
+}

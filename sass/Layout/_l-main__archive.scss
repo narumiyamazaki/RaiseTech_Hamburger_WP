@@ -1,0 +1,10 @@
+.l-main__archive {
+    padding: 2rem;
+    background-color: #FFFDFA;
+    @include media(tb) {
+        padding: 3rem;
+    }
+    @include media(pc) {
+        padding: 6rem;
+    }
+}

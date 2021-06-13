@@ -1,0 +1,25 @@
+.p-section__single--img--js--iswitch {
+    display: block;
+    margin: 2rem auto 1rem;
+    width: 100%;
+    @include media(tb) {
+        margin: 1rem auto 1rem;
+        width: 48%;
+        height: auto;
+    }
+    @include media(pc) {
+        width: 32%;
+        margin: 0 .9250rem .9250rem 0;
+        height: auto;
+    }
+}
+
+.p-section__single--img--js--iswitch:nth-child(9n){
+    @include media(tb) {
+        margin: 1rem .6578rem 2rem;
+    }
+    @include media(pc) {
+        margin: 0 .9250rem .9250rem 0;
+        width: 32%;
+    }
+}

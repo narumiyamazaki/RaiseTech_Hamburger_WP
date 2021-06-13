@@ -1,0 +1,64 @@
+@import "./Foundation/**";
+@import "./Layout/**";
+@import "./Object/**";
+
+//エラー回避のためのコード 画像とテキストをくくるdivタグに付くクラス名
+.wp-caption {
+    color: #666;
+    font-size: 1rem;
+    font-size: 0.8125rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+//エラー回避のためのコード　キャプションテキストのpタグにつくクラス
+.wp-caption-text {
+    margin: 1rem 0;
+}
+
+//エラー回避のためのコード　先頭に固定表示している投稿記事に付与されるクラス
+.sticky {
+    position: relative;
+}
+
+//エラー回避のためのコード 投稿に [gallery] ショートコードを用いて表示したギャラリーに付与されるクラス
+.gallery-caption {
+    font-size: 1rem;
+}
+
+//エラー回避のためのコード コメント欄で管理人のコメントに付くクラス
+.bypostauthor {
+    border: 1px solid #333;
+    padding: 2px;
+}
+
+//エラー回避のためのコード 投稿に画像を挿入する際の『配置（左、右、中央）』によって付与されるクラス
+.alignleft {
+display: inline;
+float: left;
+margin-right: 1.5em;
+}
+
+.alignright {
+display: inline;
+float: right;
+margin-left: 1.5em;
+}
+
+.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+//エラー回避のためのコード　音声読み上げソフトに読み上げさせるためにつけるものらしい
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+

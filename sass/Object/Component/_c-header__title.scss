@@ -1,0 +1,16 @@
+/*Component*/
+.c-header__title {
+    @include header--title--menu(4rem);
+    margin: auto;
+    text-align: center;
+    padding-top: 5rem;
+    > a {
+        text-decoration: none;
+        color: #707070;
+    }
+    @include media(pc){
+    padding-top: 0;
+    margin: 3rem 0 3rem 4rem; 
+    font-size: 4.5rem;
+        }
+}

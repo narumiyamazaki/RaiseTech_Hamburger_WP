@@ -1,0 +1,10 @@
+.l-main__single {
+    padding: 2.2rem;
+    background-color: #FFFDFA;
+    @include media(tb) {
+        padding: 5.5rem;
+    }
+    @include media(pc) {
+        padding: 2.5rem 5rem;
+    }
+}

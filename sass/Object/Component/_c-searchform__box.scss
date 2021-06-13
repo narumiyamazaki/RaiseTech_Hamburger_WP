@@ -1,0 +1,40 @@
+.c-searchform__box {
+    border:solid;
+    border-radius: .8rem;
+    border-width:  .1rem;
+    border-color: #707070;
+    height: 4rem;
+    width: 60%;
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 25%;
+        left:15%;
+        width: 4%;
+        height: 5%;
+        border-radius: 50%;
+        border: .2rem solid #808080;
+    }
+    &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 90%;
+        left: 60%;
+        width: 50%;
+        height: 10%;
+        background:  #808080;
+        margin: .4rem 0 0 .3rem;
+        transform: rotate(45deg);
+    }
+
+    @include media(tb) {
+        width: 52%;
+    }
+    @include media(pc) {
+        text-align: right;
+        width: 75%;
+        height: 3rem;
+    }
+}

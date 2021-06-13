@@ -1,0 +1,26 @@
+.p-article__single--sub-text {
+    margin: 0;
+    font-family:"M+ 1m regular";
+    font-size:1.7rem;
+    line-height: 2.4rem;
+    flex: 2;
+    height:17rem;
+    overflow: hidden;
+    > span {
+        margin-left: .5rem;
+    }
+    @include media(tb) {
+        height: auto;
+        flex:2;
+        line-height: 2.1rem;
+        font-size: 1.4rem;
+    > span {
+        margin-left: .8rem;
+    }
+    @include media(pc) {
+        flex:1.2;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    }
+}

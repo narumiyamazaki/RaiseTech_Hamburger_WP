@@ -1,0 +1,7 @@
+.p-aside {
+    position: relative;
+    margin-top: 1rem;
+    @include media(tb) {
+        margin: 0;
+    }
+}

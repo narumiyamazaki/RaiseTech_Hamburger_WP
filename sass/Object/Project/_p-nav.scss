@@ -1,0 +1,53 @@
+//ナビメニューのレイアウト部分
+.p-nav {
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    white-space: nowrap;
+        & &--wrapper {
+            & &--body {
+                 background-color: #F2EDE9;
+        }
+    }
+}
+//nav--body部分はPCサイズのみ表示させ、それ以外のときは非表示にする
+.p-nav {
+    display: none;
+    @include media(pc){
+        display: block;
+        background-color:#F2EDE9;
+        position: relative;
+        z-index: 200;
+        height: 100%;
+    }
+}
+/*サイドメニューの開閉*/
+.p-nav-is-open {
+    display: block;
+    position: absolute;
+    right:0;
+    z-index: 200;
+    background-color:#F2EDE9;
+    text-align: left;
+    padding-left: 3rem;   
+    white-space: nowrap;
+    width: 90%;
+    @include media(tb) {
+        width:45%;
+    }
+}
+
+
+//サイドメニューの大項目
+.p-nav__side {
+    @extend .p-nav__burger;
+}
+.p-nav__drink {
+    @extend .p-nav__burger;
+}
+.p-nav__sidemenu {
+    @extend .p-nav__burgermenu;
+}
+.p-nav__drinkmenu {
+    @extend .p-nav__burgermenu;
+}

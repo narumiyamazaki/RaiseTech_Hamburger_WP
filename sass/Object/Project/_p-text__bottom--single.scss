@@ -1,0 +1,17 @@
+.p-text__bottom--single {
+    font-family: "M+ 1m bold";
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 7rem;
+    @include media(tb) {
+        font-size: 1.3rem;
+        margin-top: 5.5rem;
+        margin-bottom: .5rem;
+    }
+    @include media(pc) {
+        font-size: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 9rem;
+    }
+}

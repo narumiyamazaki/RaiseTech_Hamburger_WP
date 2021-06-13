@@ -1,0 +1,11 @@
+.p-article__textarea--archive {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    width: 75%;
+    font-family:"M+ 1m regular";
+    font-size: 1.5rem;
+    @include media(pc) {
+        width:90%;
+        font-size: 1rem;
+    }
+}

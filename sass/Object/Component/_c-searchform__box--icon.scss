@@ -1,0 +1,25 @@
+//不要かもしれない
+.c-searchform__box--icon {
+    //丸部分
+        position: absolute;
+        display: block;
+        top: 25%;
+        left:15%;
+        width: 4%;
+        height: 5%;
+        border-radius: 50%;
+        border: .2rem solid #808080;
+        //斜め下部分
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 90%;
+            left: 60%;
+            width: 50%;
+            height: 10%;
+            background:  #808080;
+            margin: .4rem 0 0 .3rem;
+            transform: rotate(45deg);
+        }
+    }

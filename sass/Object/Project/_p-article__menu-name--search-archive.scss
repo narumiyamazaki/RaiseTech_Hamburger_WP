@@ -1,0 +1,12 @@
+//チーズバーガー文字部分
+.p-article__menu-name--search-archive {
+    font-family:"M+ 1m bold";
+    font-size: 2rem;
+    display: none;
+    @include media(tb){
+        display: block;
+    }
+    @include media(pc){
+        display: none;
+    }
+}
